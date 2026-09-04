@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Serene Haven - Dementia Care Centre</title>
+</head>
+<style>
+	* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+body {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ line-height: 1.6;
+ background-color: #f4f8f6;
+ color: #2d3748;
+}
+/* Header & Navigation */
+header {
+ background-color: #0f766e;
+ color: #ffffff;
+ padding: 1rem 2rem;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+nav a {
+ color: #ffffff;
+ text-decoration: none;
+ margin-left: 1.5rem;
+ font-weight: 500;
+ transition: color 0.3s ease;
+}
+nav a:hover {
+ color: #99f6e4;
+}
+/* Hero Section */
+.hero {
+ background: linear-gradient(rgba(15, 118, 110, 0.85), rgba(15, 118, 110, 0.85));
+ color: white;
+ text-align: center;
+ padding: 4rem 1rem;
+}
+.card-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: 1.5rem;
+ margin-top: 1rem;
+}
+.card {
+ background: #ffffff;
+ padding: 1.5rem;
+ border-radius: 8px;
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+ transform: translateY(-5px);
+ box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+/* Keyframes Pulse Animation for Events */
+@keyframes highlightPulse {
+ 0% {
+ box-shadow: 0 0 0 0 rgba(13, 148, 136, 0.6);
+ }
+ 70% {
+ box-shadow: 0 0 0 12px rgba(13, 148, 136, 0);
+ }
+ 100% {
+ box-shadow: 0 0 0 0 rgba(13, 148, 136, 0);
+ }
+}
+.event-banner {
+ background-color: #ffffff;
+ border-left: 5px solid #0d9488;
+ padding: 1.5rem;
+ border-radius: 8px;
+ margin-top: 1rem;
+ animation: highlightPulse 2.5s infinite;
+}
+.badge {
+ background-color: #e11d48;
+ color: white;
+ padding: 0.2rem 0.6rem;
+ font-size: 0.8rem;
+ border-radius: 4px;
+ text-transform: uppercase;
+ font-weight: bold;
+}
+/* Video Styling */
+.video-wrapper video {
+ width: 100%;
+ border-radius: 8px;
+ margin-top: 1rem;
+}
+/* Footer */
+footer {
+ text-align: center;
+ padding: 1.5rem;
+ background-color: #0f766e;
+ color: white;
+ margin-top: 3rem;
+}
+</style>
+<body>
+ <header>
+ <div class="logo">Serene Haven</div>
+ <nav>
+ <a href="#services">Services</a>
+ <a href="#events">Promotions</a>
+ <a href="#media">Tour</a>
+ </nav>
+ </header>
+ <section class="hero">
+ <h1>Compassionate Care for Your Loved Ones</h1>
+ <p>Specialized dementia and Alzheimer's care in a safe, home-like environment.</p>
+ </section>
+ <section id="services" class="container">
+ <h2>Our Care Services</h2>
+ <div class="card-grid">
+ <div class="card">
+ <h3>24/7 Assisted Living</h3>
+ <p>Round-the-clock medical supervision and daily assistance tailored to cognitive needs.</p>
+ </div>
+ <div class="card">
+ <h3>Memory Stimulation</h3>
+ <p>Therapeutic puzzles, sensory rooms, and art therapy to support cognitive health.</p>
+ </div>
+ <div class="card">
+ <h3>Respite Care</h3>
+ <p>Short-term stay options designed to give family caregivers a well-deserved rest.</p>
+</div>
+ </div>
+ </section>
+ <section id="events" class="container">
+ <h2>Promotional Events</h2>
+ <div class="event-banner">
+ <span class="badge">Special Event</span>
+ <h3>Free Memory Health Screening & Open Day</h3>
+ <p>Join us this Saturday for complimentary cognitive assessments and a tour of our sensory gardens.</p>
+ </div>
+ </section>
+ <section id="media" class="container">
+ <h2>Virtual Centre Tour</h2>
+ <div class="video-wrapper">
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/e_04ZrNroTo?si=BIkPWQIz4EY-KtaK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ </video>
+ </div>
+ </section>
+ <footer>
+ <p>&copy; 2026 Serene Haven Dementia Care Centre. All rights reserved.</p>
+ </footer>
+</body>
+</html>
